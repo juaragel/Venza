@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planes &amp; comisión — Venza</title>
+<meta name="description" content="Un solo modelo: impulso publicitario gratuito y 6% de comisión únicamente sobre las ventas destacadas.">
+<link rel="icon" href="assets/logo-icon-raw.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-icon-raw.png" alt="Venza">
+      <span>Venza</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="emprendimientos.html">Emprendimientos</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="planes.html" class="active">Planes &amp; comisión</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="nav-actions">
+      <a href="contacto.html" class="btn btn-grad btn-sm">Postula tu emprendimiento</a>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+  </nav>
+  <div class="mobile-panel">
+    <a href="index.html">Inicio</a>
+    <a href="emprendimientos.html">Emprendimientos</a>
+    <a href="como-funciona.html">Cómo funciona</a>
+    <a href="planes.html" class="active">Planes &amp; comisión</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="contacto.html" class="btn btn-grad btn-block">Postula tu emprendimiento</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap page-header">
+    <span class="eyebrow">Un solo modelo, sin sorpresas</span>
+    <h1 style="font-size:clamp(2.2rem,4vw,3.2rem);">Ganas visibilidad gratis. <em class="grad-text">Venza gana cuando tú vendes.</em></h1>
+    <p class="lede">No hay planes escalonados ni mensualidades. Todo emprendimiento entra al mismo impulso publicitario; la única comisión, del 6%, aplica solo sobre las ventas que pasan por tu tienda destacada.</p>
+  </div>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="tabbar" data-tabgroup="plan">
+        <button class="tabbtn active" data-tab="impulso">Antes de la meta — Impulso</button>
+        <button class="tabbtn" data-tab="destacado">Después de la meta — Destacado</button>
+      </div>
+
+      <div class="tabpanel active" data-tabgroup="plan" data-tab="impulso">
+        <div class="two-col">
+          <div>
+            <h2 style="font-size:1.8rem;">Etapa Impulso</h2>
+            <p class="lede" style="margin-top:14px;">Desde el día uno, sin costo. Tu emprendimiento vive en el portal de visualización mientras acumula vistas y ventas hacia su meta.</p>
+          </div>
+          <ul class="stack-gap-lg">
+            <li class="step-card"><h3>Vitrina en el portal</h3><p>Ficha con fotos, descripción y categoría, visible para todo el tráfico de Venza.</p></li>
+            <li class="step-card"><h3>Publicidad gestionada</h3><p>Venza pauta tu vitrina en sus canales, sin que tengas que administrar campañas.</p></li>
+            <li class="step-card"><h3>Panel de progreso</h3><p>Sigues en tiempo real cuánto te falta para la meta de vistas y de ventas.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabpanel" data-tabgroup="plan" data-tab="destacado">
+        <div class="two-col">
+          <div>
+            <h2 style="font-size:1.8rem;">Etapa Destacado</h2>
+            <p class="lede" style="margin-top:14px;">Al cruzar la meta, tu emprendimiento sube de nivel dentro del portal y empieza a vender directamente en Venza.</p>
+          </div>
+          <ul class="stack-gap-lg">
+            <li class="step-card"><h3>Rebranding incluido</h3><p>Nueva identidad visual pensada para tu espacio destacado.</p></li>
+            <li class="step-card"><h3>Tienda destacada</h3><p>Espacio prioritario de venta dentro de la página, con checkout propio de Venza.</p></li>
+            <li class="step-card"><h3>6% de comisión</h3><p>Solo se descuenta sobre lo que efectivamente se vende ahí. Nada más.</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Calculadora</span>
+        <h2>¿Cuánto te queda por cada venta?</h2>
+        <p class="lede">Simula una venta dentro de tu tienda destacada. Venza solo retiene comisión sobre esta etapa, nunca durante el impulso publicitario.</p>
+      </div>
+
+      <div class="calc">
+        <div class="calc-field">
+          <label for="calc-amount">Monto de la venta (COP)</label>
+          <div class="calc-input-wrap">
+            <span>$</span>
+            <input type="number" id="calc-amount" value="120000" min="0" step="1000">
+          </div>
+          <div class="calc-range">
+            <label for="calc-rate">Comisión Venza <span id="calc-rate-out">6.0%</span></label>
+            <input type="range" id="calc-rate" min="6" max="6" step="0.1" value="6" disabled>
+            <p class="small-print" style="margin-top:8px;">La comisión de Venza es fija: 6%. La barra queda fija para que veas que no cambia según el monto.</p>
+          </div>
+        </div>
+        <div class="calc-results">
+          <div class="calc-result-row highlight">
+            <span>Tú recibes</span>
+            <b id="calc-out-tuyo">$0</b>
+          </div>
+          <div class="calc-result-row">
+            <span>Comisión Venza (6%)</span>
+            <b id="calc-out-venza">$0</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Comparación</span>
+        <h2>Qué cambia entre etapas</h2>
+      </div>
+      <table class="table-compare">
+        <thead>
+          <tr><th>Beneficio</th><th>Etapa Impulso</th><th>Etapa Destacado</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Vitrina en el portal</td><td class="yes">Incluida</td><td class="yes">Incluida</td></tr>
+          <tr><td>Publicidad gestionada por Venza</td><td class="yes">Incluida</td><td class="yes">Incluida</td></tr>
+          <tr><td>Panel de progreso hacia la meta</td><td class="yes">Incluido</td><td class="no">No aplica — ya la alcanzaste</td></tr>
+          <tr><td>Rebranding de marca</td><td class="no">No incluido aún</td><td class="yes">Incluido</td></tr>
+          <tr><td>Tienda con venta directa destacada</td><td class="no">No disponible</td><td class="yes">Incluida</td></tr>
+          <tr><td>Costo fijo mensual</td><td class="yes">$0</td><td class="yes">$0</td></tr>
+          <tr><td>Comisión por venta</td><td class="yes">$0</td><td class="no">6%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-banner">
+        <div>
+          <h2>Sin planes que elegir. Solo una meta por alcanzar.</h2>
+          <p>Postúlate, activa tu impulso publicitario y empieza a acumular vistas y ventas hoy.</p>
+        </div>
+        <a href="contacto.html" class="btn btn-grad">Postula tu emprendimiento</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><img src="assets/logo-icon-raw.png" alt="Venza"><span>Venza</span></div>
+        <p>El portal donde los pequeños emprendimientos ganan visibilidad, alcanzan metas y suben de nivel.</p>
+      </div>
+      <div>
+        <h4>Portal</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="emprendimientos.html">Emprendimientos</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="planes.html">Planes &amp; comisión</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Emprendedores</h4>
+        <ul>
+          <li><a href="contacto.html">Postular emprendimiento</a></li>
+          <li><a href="planes.html">Calculadora de comisión</a></li>
+          <li><a href="como-funciona.html#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@venza.co">hola@venza.co</a></li>
+          <li><a href="contacto.html">Formulario de contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Venza. Portal de visualización de emprendimientos.</span>
+      <span>Comisión única de 6% sobre ventas destacadas.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
